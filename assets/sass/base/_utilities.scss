@@ -1,0 +1,68 @@
+.st-pt {
+    padding-top: rem(80);
+    @include respond-to(md) {
+        padding-top: rem(55);
+    }
+    @include respond-to(sm) {
+        padding-top: rem(45);
+    }
+    @include respond-to(xs) {
+        padding-top: rem(35);
+    }
+}
+
+.st-pb {
+    padding-bottom: rem(80);
+    @include respond-to(md) {
+        padding-bottom: rem(55);
+    }
+    @include respond-to(sm) {
+        padding-bottom: rem(45);
+    }
+    @include respond-to(xs) {
+        padding-bottom: rem(35);
+    }
+}
+
+@include respond-to(md) {
+    .hide-lg-tablet {
+        display: none;
+    }
+}
+
+@include respond-to(sm) {
+    .hide-sm {
+        display: none;
+    }
+}
+
+@include respond-to(xs) {
+    .hide-xs {
+        display: none;
+    }
+}
+
+.title-block {
+    margin-bottom: 20px;
+    h2 {
+        margin: 0;
+    }
+    h4 {
+        text-transform: uppercase;
+        color: $tertiary;
+        letter-spacing: 4px;
+        position: relative;
+        padding-left: 36px;
+        background-image: url(../../images/title-shape.svg);
+        background-repeat: no-repeat;
+        background-position: 0 53%;
+        background-size: 20px;
+        line-height: 1;
+        margin: 0 0 15px;
+        display: inline-table;
+    }
+
+    @include respond-to(xs) {
+        margin-bottom: 15px;
+    }
+}

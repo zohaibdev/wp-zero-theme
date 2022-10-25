@@ -1,0 +1,34 @@
+{
+  "name": "wp-zero-theme",
+  "version": "1.0.0",
+  "description": "Zero Theme is a modernized take on an ever-popular WordPress layout. the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.",
+  "scripts": {
+    "start": "npm-run-all --parallel liveserver watch",
+    "liveserver": "live-server",
+    "watch": "node-sass assets/sass/style.scss assets/css/style.css -w",
+    "compile": "node-sass assets/sass/style.scss assets/css/style.css",
+    "prefix": "postcss assets/css/style.css --use autoprefixer -o assets/css/style.css",
+    "compress": "node-sass assets/scss/style.scss assets/css/style.css --output-style compressed",
+    "build": "npm-run-all compile prefix compress"
+  },
+  "keywords": [
+    "WordPress",
+    "Custom",
+    "Theme",
+    "Starter",
+    "Theme",
+    "Boilerplate",
+    "theme",
+    "wordpress"
+  ],
+  "repository": "git@github.com:zohaibdev/html-scss-boilerplate.git",
+  "author": "Zohaib Khan",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "live-server": "^1.2.2",
+    "node-sass": "^7.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.0.0"
+  }
+}

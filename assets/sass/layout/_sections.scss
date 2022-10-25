@@ -1,0 +1,12 @@
+section {
+    padding: rem(80) 0;
+    @include respond-to(lg) {
+        padding: rem(55) 0;
+    }
+    @include respond-to(sm) {
+        padding: rem(45) 0;
+    }
+    @include respond-to(xs) {
+        padding: rem(35) 0;
+    }
+}

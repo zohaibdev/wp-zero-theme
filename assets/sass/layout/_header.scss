@@ -1,0 +1,31 @@
+header {
+    .navbar-brand {
+        img {
+            max-width: 200px;
+        }
+    }
+
+    .navbar {
+        .navbar-nav {
+            .nav-item .nav-link {
+                color: $tertiary;
+                &:hover,
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+
+        .hd-btn {
+            display: flex;
+
+            @include respond-to(sm) {
+                display: none;
+            }
+
+            @include respond-to(xs) {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+$primary: #353535;
+$secondary: #004187;
+$tertiary: #656565;
+
+$primary: var(--c1);
+$secondary: var(--c2);
+$tertiary:var(--c3);
+
+$breakpoints: (
+    "xxl": (
+        "max": 3024px,
+        "min": 1921px,
+    ),
+    "xl": (
+        "max": 1920px,
+        "min": 1280px,
+    ),
+    "lg": (
+        "max": 1440px,
+        "min": 1280px,
+    ),
+    "md": (
+        "max": 1119px,
+        "min": 992px,
+    ),
+    "sm": (
+        "max": 991px,
+        "min": 768px,
+    ),
+    "xs": (
+        "max": 767px,
+        "min": 320px,
+    ),
+) !default;

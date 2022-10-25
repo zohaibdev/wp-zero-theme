@@ -1,0 +1,83 @@
+footer {
+    .main-footer {
+        padding: 50px 0 20px;
+
+        .ft-block {
+            margin-bottom: 30px;
+
+            .ft-title {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-size: 18px;
+                    font-family: "Mont - SemiBold";
+                    margin: 0;
+                }
+            }
+
+            .ft-links {
+                li {
+                    margin-bottom: 10px;
+
+                    a:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+
+            .ft-content {
+                max-width: 300px;
+            }
+
+            .ft-social {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin: 20px 0 0;
+
+                p {
+                    margin: 0;
+                }
+
+                ul {
+                    display: flex;
+                    gap: 15px;
+                    font-size: 20px;
+
+                    a:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        .container {
+            border-top: 1px solid rgba(101, 101, 101, 10%);
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            .row {
+                align-items: center;
+            }
+        }
+
+        address {
+            margin: 5px 0;
+
+            @include respond-to(xs) {
+                text-align: center;
+            }
+        }
+
+        .payment img {
+            margin: 0 0 0 auto;
+            display: block;
+
+            @include respond-to(xs) {
+                margin: 10px auto 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+    border: 1px solid $primary;
+    border-radius: 8px;
+    padding: 15px 15px;
+    width: 100%;
+
+    &::placeholder {
+        color: #000;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
+textarea {
+    height: 120px;
+}
